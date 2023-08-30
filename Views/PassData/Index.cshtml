@@ -1,0 +1,24 @@
+﻿@model List<Department>
+
+
+<h1>
+    Number Of Department : @Model.Count()
+</h1>
+<select class="form-control">
+    @foreach (var item in (List<string>)ViewData["BranchesView"])
+    {
+        <option>@item</option>
+    }
+
+</select>
+<h2>@ViewData["String"]</h2>
+
+
+@*show ViewData
+*@
+<h2>@ViewData["data"].ToString()</h2> 
+
+
+@*show ViewBAg
+*@
+<h2>@ViewBag.data</h2>

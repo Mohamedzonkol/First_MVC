@@ -1,0 +1,11 @@
+﻿@model Student
+<div class="card" style="width:400px">
+    <div class="card-body">
+    <h4 class="card-title">@Model.Name</h4>
+    <p class="card-text">@Model.Adress</p>
+        <a asp-action="Detalis" asp-controller="Stud" asp-route-id="@Model.Id" class="btn btn-primary">see your profile</a>
+    </div>
+
+    <img class="card-img-bottom" src="/images/@Model.Image" alt="Card image" style="width:100%">
+
+</div>

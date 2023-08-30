@@ -1,0 +1,24 @@
+﻿@model List<Department>
+<table class="table table-bordered table-hover" width="50%">
+<tr>
+    <th>
+            Department Name
+    </th>
+    <th>
+            Manager Name
+    </th>
+
+</tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.MangerName</td>
+            <td>
+                <input type="button" onclick="AjaxCall(@item.Id)" value="Show" class="btn btn-success" />
+            </td>
+
+        </tr>
+    }
+</table>
+<a href="\Dept\addDb" class="btn btn-alert-success">Add New DEpartment</a>

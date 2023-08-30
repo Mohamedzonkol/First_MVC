@@ -1,0 +1,17 @@
+﻿@model Department
+@{
+    Layout = "_MyLayout";
+}
+<form action="\Dept\SaveAdd" method="post">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="Name" id="Name"
+               class="form-control" value="@Model.Name" placeholder="Enter Your Name" />
+    </div>
+    <div>
+        <label for="mangername">Manager Name</label>
+        <input type="text" name="MangerName" id="MangerName"
+               class="form-control" value="@Model.MangerName" placeholder="Enter Your Manger Name " />
+    </div>
+    <input  type="submit" value="Add" class="btn btn-success" />
+</form>

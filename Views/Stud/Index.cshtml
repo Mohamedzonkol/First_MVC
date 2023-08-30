@@ -1,0 +1,8 @@
+﻿@model List<Student>
+@foreach(var item in Model){
+    <partial name="_StudentCard" model="@item" />
+
+}
+<a href="\Stud\Edit\8">Edit</a>
+
+<a asp-action="Add" asp-controller="Stud" class="btn btn-danger"> New Student</a>

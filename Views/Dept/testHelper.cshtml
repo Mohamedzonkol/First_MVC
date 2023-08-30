@@ -1,0 +1,19 @@
+﻿@model Department
+
+<!--Pure HTML-->
+<input type="text" name="Name" id="Name" value="@Model.Name" class="form-control" />
+<!---
+Losselt  type helper 
+Search in
+[viewdata]
+[viewbag]
+[model]
+or reurn empty
+-no exepction occure
+--->
+@Html.TextBox("Name")
+
+<!--Strong type helper-->
+
+@Html.TextBoxFor(x=>x.Name)
+<!--Search based on model that valuew =Name , no need to seach in viewdata and viewbag-->
